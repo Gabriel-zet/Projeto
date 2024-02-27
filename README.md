@@ -44,7 +44,7 @@ Para executar este projeto localmente, siga as instruções abaixo:
 **Frontend**
 - `cd front`
 - `npm install`
-- `npm run serve`(para inicializar a o frontend)
+- `npm run serve`(para inicializar o frontend)
 
 **API**
 - `cd ..` (Para voltar um diretório)
