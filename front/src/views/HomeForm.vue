@@ -7,9 +7,6 @@
           <tr>
             <th>Category</th>
           </tr>
-          <tr>
-            <th>Category</th>
-          </tr>
         </table>
       </section>
     </div>

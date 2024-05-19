@@ -55,5 +55,4 @@ router.delete('/category', verifyRole, async (req, res) => {
         return res.status(500).json({ erro: "Erro interno no servidor!" })
     }
 })
-
 export { router as categoryRoutes };

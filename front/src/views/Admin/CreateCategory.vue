@@ -23,12 +23,11 @@
     <div v-if="showPopup" id="popup" class="popup">
       <div class="popup-content">
         <span class="close" @click="closePopup">&times;</span>
-        <p>Criado com sucesso!</p>
+        <p>Criado com sucesso</p>
       </div>
     </div>
   </div>
 </template>
-
 
 <script>
 import axios from "axios";
