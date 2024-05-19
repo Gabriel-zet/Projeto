@@ -6,7 +6,7 @@ import { authToken } from "../middleware/verificarToken";
 const router = express.Router()
 const categoryUseCase = new CategoryUseCase()
 
-router.post('/category', verifyRole, async (req, res) => {
+router.post('/category', async (req, res) => {
     const { title, description } = req.body;
     if (!title || !description) {
         return res.status(400).json({ error: "Erro no title ou descricao" })

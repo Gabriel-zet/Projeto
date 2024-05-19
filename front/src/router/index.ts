@@ -5,6 +5,7 @@ import HomeForm from '../views/HomeForm.vue';
 import UsersForm from '../views/UsersForm.vue';
 import ProfileForm from '../views/ProfileForm.vue';
 import UpdateUser from '../views/UpdateUser.vue'
+import CreateCategory from '../views/Admin/CreateCategory.vue'
 
 import Cookies from 'js-cookie';
 import axios from 'axios';
@@ -73,6 +74,18 @@ const routes: Array<RouteRecordRaw> = [
     path: '/UserUpdate/:id',
     name: 'UserUpdate',
     component: UpdateUser,
+    beforeEnter: (to, from, next) => {
+      if (hasToken()) {
+        next()
+      } else {
+        next('/Login')
+      }
+    }
+  },
+  {
+    path: '/CreateCategory',
+    name: 'CategoryCreate',
+    component: CreateCategory,
     beforeEnter: (to, from, next) => {
       if (hasToken()) {
         next()
